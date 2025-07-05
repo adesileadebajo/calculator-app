@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR WEB APP</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex justify-center items-center">
+    <!--The whole container for the app-->
+    <div class="border-2 shadow-lg w-72 h-93">
+        <!--This is for the display-->
+        <div id="display" class="text-right bg-gray-500 text-white text-6xl h-17">
+            0
+        </div>
+        <!--This container holds the whole buttons-->
+        <div class="grid grid-cols-4 text-6xl bg-white h-75 gap-2">
+            <!--The first row buttons-->
+            <button class="btn bg-gray-200 cursor-pointer" data-action="0">0</button>
+            <button class="btn bg-gray-200 cursor-pointer" data-action="1">1</button>
+            <button class="btn bg-gray-200 cursor-pointer" data-action="2">2</button>
+            <button class="btn bg-gray-200 cursor-pointer" data-action="3">3</button>
+            <!--The second row buttons-->
+            <button class="btn bg-gray-200 cursor-pointer" data-action="4">4</button>
+            <button class="btn bg-gray-200 cursor-pointer" data-action="5">5</button>
+            <button class="btn bg-gray-200 cursor-pointer" data-action="6">6</button>
+            <button class="btn bg-gray-200 cursor-pointer" data-action="7">7</button>
+            <!--The third row buttons-->
+            <button class="btn bg-gray-200 cursor-pointer" data-action="8">8</button>
+            <button class="btn bg-gray-200 cursor-pointer" data-action="9">9</button>
+            <button class="btn bg-gray-900 cursor-pointer text-white" data-action="+">+</button>
+            <button class="btn bg-gray-900 cursor-pointer text-white" data-action="-">-</button>
+            <!--The last row buttons-->
+            <button class="btn bg-gray-900 cursor-pointer text-white" data-action="/">/</button>
+            <button class="btn bg-gray-900 cursor-pointer text-white" data-action="*">x</button>
+            <button class="btn bg-red-300 cursor-pointer text-white" data-action="clear">c</button>
+            <button class="btn bg-green-300 cursor-pointer text-white" data-action="=">=</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
